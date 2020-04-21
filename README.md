@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/modestukasai/online-radio-search-static-web.svg?branch=master)](https://travis-ci.org/modestukasai/online-radio-search-static-web)
+
 # Online Radio Search static web
 
 ## How to run in dev mode
