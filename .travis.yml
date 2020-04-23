@@ -17,6 +17,6 @@ after_success:
 
 deploy:
   provider: script
-  script: export VERSION=$(date +"%Y-%m-%d-%T") && docker build -t "online-radio-search-static-web-${VERSION}" . && docker tag "online-radio-search-static-web-${VERSION}" && docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push "online-radio-search-static-web-${VERSION}"
+  script: export VERSION=$(date +"%Y-%m-%d-%H-%M-%S") && docker build -t online-radio-search-static-web:${VERSION} . && docker tag online-radio-search-static-web-${VERSION} && docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push online-radio-search-static-web-${VERSION}
   on:
     branch: master
