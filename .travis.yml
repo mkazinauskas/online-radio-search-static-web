@@ -15,19 +15,19 @@ cache:
     - $HOME/.gradle/wrapper/
 script:
   - ./gradlew build -i
-  - docker build -t $IMAGE_NAME .
+  - docker build -t "$IMAGE_NAME" .
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
   - ls build/
   - ls build/libs/
-  - echo IMAGE_VERSION
-  - docker tag $IMAGE_NAME:$IMAGE_VERSION
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - echo "$IMAGE_VERSION"
+  - docker tag "$IMAGE_NAME:$IMAGE_VERSION"
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
 
 deploy:
   provider: script
-  script: docker push $IMAGE_NAME:$IMAGE_VERSION
+  script: docker push "${IMAGE_NAME}:${IMAGE_VERSION}"
   on:
     branch: master
