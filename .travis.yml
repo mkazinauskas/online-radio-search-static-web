@@ -6,6 +6,8 @@ os: linux
 env:
   - IMAGE_NAME="online-radio-search-static-web"
   - IMAGE_VERSION=$(date +"%Y-%m-%d-%H-%M-%S")
+  - IMAGE_STUFF="TITLE"
+  - IMAGE_TITLE="online-radio-search-static-web"
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
