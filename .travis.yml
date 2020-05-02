@@ -4,7 +4,7 @@ services:
   - docker
 os: linux
 env:
-  - IMAGE_NAME=online-radio-search-static-web
+  - IMAGE_NAME="online-radio-search-static-web"
   - IMAGE_VERSION=$(date +"%Y-%m-%d-%H-%M-%S")
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
