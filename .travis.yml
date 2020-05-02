@@ -22,8 +22,8 @@ after_success:
 
 before_deploy:
   - echo "$IMAGE_VERSION"
-  - docker tag "$IMAGE_NAME:$IMAGE_VERSION"
-  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker tag "${IMAGE_NAME}:${IMAGE_VERSION}"
+  - docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
 
 deploy:
   provider: script
