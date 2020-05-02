@@ -17,7 +17,7 @@ script:
   - ./gradlew build -i
   - ls build/
   - ls build/libs/
-  - docker build -t "$IMAGE_NAME" .
+  - docker build -t "${IMAGE_NAME}" .
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
