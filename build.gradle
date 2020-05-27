@@ -32,6 +32,8 @@ dependencies {
     }
     testImplementation "org.spockframework:spock-core:${spockVersion}"
     testImplementation "org.spockframework:spock-spring:${spockVersion}"
+    testImplementation 'com.github.tomakehurst:wiremock:2.26.3'
+
 }
 
 dependencyManagement {
