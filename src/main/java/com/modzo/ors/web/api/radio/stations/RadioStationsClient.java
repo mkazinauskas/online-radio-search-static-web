@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "radioStationsClient", url = "${application.apiUrl}")
 public interface RadioStationsClient {
 
-    @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}")
+    @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}&sort=id%2Cdesc")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStations(@RequestParam("page") long page);
 
     @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}")
