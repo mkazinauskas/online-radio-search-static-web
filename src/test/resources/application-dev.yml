@@ -1,4 +1,4 @@
 server.port: 3002
 
 application:
-  apiUrl: https://api.onlineradiosearch.com
+  apiUrl: http://localhost:8080
