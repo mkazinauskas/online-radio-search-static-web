@@ -8,7 +8,7 @@ class SitemapRootControllerSpec extends IntegrationSpec {
 
     void 'should retrieve root sitemap'() {
         when:
-            ResponseEntity<String> result = restTemplate.getForEntity("/sitemap.xml", String)
+            ResponseEntity<String> result = restTemplate.getForEntity('/sitemap.xml', String)
         then:
             result.statusCode == HttpStatus.OK
         and:
