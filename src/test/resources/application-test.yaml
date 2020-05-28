@@ -1,0 +1,4 @@
+application:
+  apiUrl: 'http://localhost:8081'
+  sitemap:
+    itemsPerPage: 4

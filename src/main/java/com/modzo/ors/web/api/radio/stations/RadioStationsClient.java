@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface RadioStationsClient {
 
     @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}&sort=id%2Cdesc")
-    PagedModel<EntityModel<RadioStationResponse>> getRadioStations(@RequestParam("page") long page);
+    PagedModel<EntityModel<RadioStationResponse>> getRadioStationsSortedDesc(@RequestParam("page") long page);
+
+    @GetMapping("/radio-stations")
+    PagedModel<EntityModel<RadioStationResponse>> getRadioStations(@RequestParam("page") long page,
+                                                                   @RequestParam("size") int size);
 
     @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStationByPlayedSongId(

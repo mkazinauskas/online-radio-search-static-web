@@ -22,7 +22,9 @@ class LatestRadioStations {
     }
 
     Paged<RadioStationModel> retrieve(Pageable pageable) {
-        PagedModel<EntityModel<RadioStationResponse>> stations = client.getRadioStations(pageable.getPageNumber());
+        PagedModel<EntityModel<RadioStationResponse>> stations = client.getRadioStationsSortedDesc(
+                pageable.getPageNumber()
+        );
         List<RadioStationModel> content = stations.getContent()
                 .stream()
                 .map(EntityModel::getContent)

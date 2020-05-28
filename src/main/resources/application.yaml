@@ -17,3 +17,7 @@ application:
   searchRadioStationClient.size: 10
   searchSongClient.size: 10
   searchGenreClient.size: 10
+  sitemap:
+    domain: 'https://web.onlineradiosearch.com'
+    itemsPerPage: 1000
+    cacheTime: 24h

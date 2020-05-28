@@ -1,0 +1,15 @@
+server.port: 3002
+
+application:
+  apiUrl: 'https://api.onlineradiosearch.com'
+  latestSearchesClient.size: 50
+  radioStationSongsClient.size: 10
+  radioStreamsClient.size: 10
+  radioStationsClient.size: 10
+  searchRadioStationClient.size: 10
+  searchSongClient.size: 10
+  searchGenreClient.size: 10
+  sitemap:
+    domain: 'https://web.onlineradiosearch.com'
+    itemsPerPage: 1000
+    cacheTime: 24h
