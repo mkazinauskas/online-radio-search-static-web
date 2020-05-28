@@ -49,5 +49,5 @@ dependencyManagement {
 }
 
 bootRun {
-    systemProperty 'spring.config.location', "file:${projectDir}/src/test/resources/application-dev.yml"
+    systemProperty 'spring.config.location', "file:${projectDir}/src/test/resources/application-dev.yaml"
 }
