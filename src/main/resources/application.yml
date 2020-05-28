@@ -17,3 +17,6 @@ application:
   searchRadioStationClient.size: 10
   searchSongClient.size: 10
   searchGenreClient.size: 10
+  sitemap:
+    itemsPerPage: 50000
+    cacheTime: 24h
