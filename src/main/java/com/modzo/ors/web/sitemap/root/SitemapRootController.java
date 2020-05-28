@@ -13,7 +13,7 @@ class SitemapRootController {
         this.sitemapRootService = sitemapRootService;
     }
 
-    @GetMapping(value = "/sitemaps/index.xml")
+    @GetMapping(value = "/sitemaps/index.xml", produces = "application/xml;charset=utf-8")
     ResponseEntity<String> sitemapRoot() {
         String sitemap = sitemapRootService.rootSitemap();
         return ResponseEntity.ok().body(sitemap);

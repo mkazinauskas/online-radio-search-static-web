@@ -16,7 +16,7 @@ class SitemapPagesController {
         this.sitemapPagesService = sitemapPagesService;
     }
 
-    @GetMapping(value = "/sitemaps/sitemap-{page}.xml")
+    @GetMapping(value = "/sitemaps/sitemap-{page}.xml", produces = "application/xml;charset=utf-8")
     ResponseEntity<String> sitemapRoot(@PathVariable("page") @Min(1L) int page) {
         String sitemap = sitemapPagesService.sitemap(page);
         return ResponseEntity.ok().body(sitemap);
