@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity
 class SitemapRootControllerSpec extends IntegrationSpec {
 
     @Rule
-    WireMockRule wireMockRule = wireMockRule('stubs')
+    WireMockRule wireMockRule = wireMockRule('stubs/sitemap/root')
 
     void 'should retrieve root sitemap'() {
         when:

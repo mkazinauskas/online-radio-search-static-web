@@ -19,5 +19,5 @@ application:
   searchGenreClient.size: 10
   sitemap:
     domain: 'https://web.onlineradiosearch.com'
-    itemsPerPage: 50000
+    itemsPerPage: 1000
     cacheTime: 24h
