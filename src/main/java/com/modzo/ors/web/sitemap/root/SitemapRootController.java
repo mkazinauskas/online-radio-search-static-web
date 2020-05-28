@@ -14,7 +14,7 @@ class SitemapRootController {
     }
 
     @GetMapping(value = "/sitemaps/index.xml")
-    ResponseEntity<String> sitemapRoot(){
+    ResponseEntity<String> sitemapRoot() {
         String sitemap = sitemapRootService.rootSitemap();
         return ResponseEntity.ok().body(sitemap);
     }
