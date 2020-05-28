@@ -1,5 +1,6 @@
 package com.modzo.ors.web;
 
+import org.hibernate.validator.constraints.URL;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -25,6 +26,10 @@ public class ApplicationProperties {
         @NotNull
         private Duration cacheTime;
 
+        @URL
+        @NotNull
+        private String domain;
+
         public Integer getItemsPerPage() {
             return itemsPerPage;
         }
@@ -40,8 +45,15 @@ public class ApplicationProperties {
         public void setCacheTime(Duration cacheTime) {
             this.cacheTime = cacheTime;
         }
-    }
 
+        public String getDomain() {
+            return domain;
+        }
+
+        public void setDomain(String domain) {
+            this.domain = domain;
+        }
+    }
 
     public String getApiUrl() {
         return apiUrl;
