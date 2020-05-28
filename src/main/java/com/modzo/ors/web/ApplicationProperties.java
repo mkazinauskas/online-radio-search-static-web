@@ -16,6 +16,7 @@ import java.time.Duration;
 @ConstructorBinding
 public class ApplicationProperties {
 
+    @ConstructorBinding
     public static class Sitemap {
 
         @NotNull
