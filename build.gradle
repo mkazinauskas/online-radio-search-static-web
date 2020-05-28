@@ -31,6 +31,8 @@ dependencies {
     implementation 'com.github.dfabulich:sitemapgen4j:1.1.2'
     implementation 'com.rainerhahnekamp:sneakythrow:1.2.0'
 
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
