@@ -13,7 +13,7 @@ class RobotsController {
         this.properties = properties;
     }
 
-    @GetMapping(value = "/robots.txt")
+    @GetMapping(value = "/robots.txt", produces = "text/plain;charset=utf-8")
     ResponseEntity<String> sitemapRoot() {
         StringBuilder builder = new StringBuilder();
         builder.append("User-agent: *\n");
