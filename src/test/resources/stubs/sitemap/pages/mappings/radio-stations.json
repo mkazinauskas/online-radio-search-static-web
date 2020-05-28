@@ -1,0 +1,97 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/radio-stations?page=0&size=4"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "radioStationResponseList": [
+          {
+            "id": 5,
+            "uniqueId": "8opTyNe9dk7ujd800t5f",
+            "created": "2020-05-07T18:50:02.056985Z",
+            "title": "\"The Hits\" Radio",
+            "website": null,
+            "enabled": true,
+            "genres": [],
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5"
+              }
+            }
+          },
+          {
+            "id": 6,
+            "uniqueId": "KZEk8qXr3lQctpU7zcX1",
+            "created": "2020-05-07T19:01:17.177423Z",
+            "title": "FRISKY CHILL | feelin' frisky?",
+            "website": "http://www.frisky.fm",
+            "enabled": true,
+            "genres": [
+              {
+                "id": 1,
+                "uniqueId": "3aQkXS1LZl3YwrcSETMH",
+                "title": "Ambient"
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/6"
+              }
+            }
+          },
+          {
+            "id": 65,
+            "uniqueId": "Pxse3Bfs9k9EuuQwbKGu",
+            "created": "2020-05-25T22:07:41.482613Z",
+            "title": "radio-roermondialive",
+            "website": null,
+            "enabled": true,
+            "genres": [],
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/65"
+              }
+            }
+          },
+          {
+            "id": 7,
+            "uniqueId": "7SLqHTrz1x92jsGqCrYX",
+            "created": "2020-05-07T19:09:25.627652Z",
+            "title": "Web Radio DNOR",
+            "website": "webradiodnor.myl2mr.com",
+            "enabled": true,
+            "genres": [
+              {
+                "id": 2,
+                "uniqueId": "MrRjg4jVXGqRJQ6wgj7l",
+                "title": "Live Mix"
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/7"
+              }
+            }
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/radio-stations"
+        }
+      },
+      "page": {
+        "size": 4,
+        "totalElements": 10,
+        "totalPages": 3,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}

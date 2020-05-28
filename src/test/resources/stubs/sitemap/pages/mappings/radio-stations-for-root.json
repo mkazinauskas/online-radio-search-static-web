@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/radio-stations?page=0&size=1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "radioStationResponseList": [
+          {
+            "id": 5,
+            "uniqueId": "8opTyNe9dk7ujd800t5f",
+            "created": "2020-05-07T18:50:02.056985Z",
+            "title": "\"The Hits\" Radio",
+            "website": null,
+            "enabled": true,
+            "genres": [],
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5"
+              }
+            }
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/radio-stations"
+        }
+      },
+      "page": {
+        "size": 1,
+        "totalElements": 10,
+        "totalPages": 10,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}
