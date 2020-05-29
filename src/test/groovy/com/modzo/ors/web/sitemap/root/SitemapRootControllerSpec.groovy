@@ -19,22 +19,16 @@ class SitemapRootControllerSpec extends IntegrationSpec {
         and:
             String xml = result.body
             Node node = new XmlParser().parseText(xml)
-            with(node.url[0]) {
+            with(node.sitemap[0]) {
                 loc.text() == 'https://web.onlineradiosearch.com/sitemaps/sitemap-1.xml'
-                changefreq.text() == 'weekly'
-                priority.text() == '1.0'
                 lastmod.text() != null
             }
-            with(node.url[1]) {
+            with(node.sitemap[1]) {
                 loc.text() == 'https://web.onlineradiosearch.com/sitemaps/sitemap-2.xml'
-                changefreq.text() == 'weekly'
-                priority.text() == '1.0'
                 lastmod.text() != null
             }
-            with(node.url[2]) {
+            with(node.sitemap[2]) {
                 loc.text() == 'https://web.onlineradiosearch.com/sitemaps/sitemap-3.xml'
-                changefreq.text() == 'weekly'
-                priority.text() == '1.0'
                 lastmod.text() != null
             }
     }
