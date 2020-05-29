@@ -7,17 +7,13 @@ import com.modzo.ors.web.ApplicationProperties;
 import com.modzo.ors.web.api.radio.stations.RadioStationResponse;
 import com.modzo.ors.web.api.radio.stations.RadioStationsClient;
 import com.rainerhahnekamp.sneakythrow.Sneaky;
-import com.redfin.sitemapgenerator.ChangeFreq;
-import com.redfin.sitemapgenerator.WebSitemapGenerator;
-import com.redfin.sitemapgenerator.WebSitemapUrl.Options;
+import com.redfin.sitemapgenerator.SitemapIndexGenerator;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.stereotype.Component;
-import org.springframework.util.Assert;
 
 import java.math.RoundingMode;
 import java.util.Date;
-import java.util.List;
 import java.util.stream.IntStream;
 
 import static java.util.Optional.ofNullable;
@@ -57,21 +53,15 @@ class SitemapRootService {
         int sitemapCount = sitemapCount();
         String domain = properties.getSitemap().getDomain();
 
-        WebSitemapGenerator wsg = Sneaky.sneak(() -> new WebSitemapGenerator(domain));
+        SitemapIndexGenerator wsg = Sneaky.sneak(() -> new SitemapIndexGenerator(domain, null));
         IntStream.rangeClosed(1, sitemapCount)
                 .forEach(number -> addSitemaps(domain, wsg, number));
 
-        List<String> sitemaps = wsg.writeAsStrings();
-        Assert.isTrue(sitemaps.size() == 1, "There should be only one sitemap");
-        return sitemaps.get(0);
+        return wsg.writeAsString();
     }
 
-    private void addSitemaps(String domain, WebSitemapGenerator wsg, int number) {
-        Options url = Sneaky.sneak(() -> new Options(domain + "/sitemaps/sitemap-" + number + ".xml"));
-        url.changeFreq(ChangeFreq.WEEKLY);
-        url.lastMod(new Date());
-        url.priority(1.0);
-        wsg.addUrl(url.build());
+    private void addSitemaps(String domain, SitemapIndexGenerator wsg, int number) {
+        Sneaky.sneak(() -> wsg.addUrl(domain + "/sitemaps/sitemap-" + number + ".xml", new Date()));
     }
 
     private int sitemapCount() {
