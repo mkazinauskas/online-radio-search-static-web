@@ -16,3 +16,4 @@ application:
   googleAds:
     enabled: true
     clientId: 'myGoogleId'
+    mainPageEnabled: true

@@ -12,6 +12,12 @@ public class GoogleAdsComponent {
     }
 
     public GoogleAdsData retrieve() {
-        return new GoogleAdsData(properties.isEnabled(), properties.getClientId());
+        return new GoogleAdsData(
+                properties.isEnabled(),
+                properties.getClientId(),
+                properties.isMainPageEnabled(),
+                properties.isRadioStationTopEnabled(),
+                properties.isRadioStationDownEnabled()
+        );
     }
 }

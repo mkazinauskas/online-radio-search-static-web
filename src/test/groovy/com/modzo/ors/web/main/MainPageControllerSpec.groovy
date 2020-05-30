@@ -18,6 +18,7 @@ class MainPageControllerSpec extends IntegrationSpec {
             result.statusCode == HttpStatus.OK
         and:
             result.body.contains('src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>')
+            result.body.contains('<span>Some google ads</span>')
         and:
             result.body.contains('<h1 class="title">Latest Radio Stations</h1>')
             result.body.contains('<strong>&quot;The Hits&quot; Radio</strong>')
