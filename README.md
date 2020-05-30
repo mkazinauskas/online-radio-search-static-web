@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/modestukasai/online-radio-search-static-web.svg?branch=master)](https://travis-ci.org/modestukasai/online-radio-search-static-web)
 [![codecov](https://codecov.io/gh/modestukasai/online-radio-search-static-web/branch/master/graph/badge.svg)](https://codecov.io/gh/modestukasai/online-radio-search-static-web)
 
-
 # Online Radio Search static web
 
 ## How to run in dev mode
