@@ -1,0 +1,169 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/radio-stations/5/songs?size=10&sort=id&sort=desc&page=0"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "radioStationSongResponseList": [
+          {
+            "id": 1,
+            "uniqueId": "rWpK2ceyvlLOhXrCzhpOCMfYipsOZaowsyov1u1e",
+            "created": "2020-05-07T19:01:34.293514Z",
+            "songId": 2,
+            "songUniqueId": "8AaIDuHB6fRGmzyODwPaNrLMvORrOheaqcW73FU4",
+            "title": "FRISKY | Waves - May 2020 - Addliss",
+            "playedTime": "2020-05-07T14:23:43Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/1"
+              }
+            }
+          },
+          {
+            "id": 2,
+            "uniqueId": "U1Dx7DUvoom0opivnIullu2oTB3hE072N7J2eSee",
+            "created": "2020-05-07T19:01:34.419211Z",
+            "songId": 3,
+            "songUniqueId": "L0WJVwqGv4ZP4EO4ha9ozXs6uRd9QmrVjiqNVqUP",
+            "title": "FRISKY | Neptunian - March 2020 - Planetarium",
+            "playedTime": "2020-05-07T13:22:55Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/2"
+              }
+            }
+          },
+          {
+            "id": 3,
+            "uniqueId": "5FPC1hqWAhK3CDmftBVpGcFQtHx0YXvY8wiWkuNn",
+            "created": "2020-05-07T19:01:34.514336Z",
+            "songId": 4,
+            "songUniqueId": "FKDD9NT23N6kYKTunXJJbeaO4pSyy4eRxYmQBcsC",
+            "title": "FRISKY | Hadou - March 2020 - Djhana",
+            "playedTime": "2020-05-07T12:21:14Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/3"
+              }
+            }
+          },
+          {
+            "id": 4,
+            "uniqueId": "ylC3TnEAWt4veFcllwD9r1efHrhTlRp92CYHlWtf",
+            "created": "2020-05-07T19:01:34.581475Z",
+            "songId": 5,
+            "songUniqueId": "KXHsTrMb4GtdTdXL3W88bkjPIfOcbsz3LqD6O2lq",
+            "title": "FRISKY | Into the Night - April 2020 - Nicolaj",
+            "playedTime": "2020-05-07T11:21:18Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/4"
+              }
+            }
+          },
+          {
+            "id": 5,
+            "uniqueId": "J6oyTtB5IyAAIcmnDxGKY1XwWIgxLz8Xo6anFKff",
+            "created": "2020-05-07T19:01:34.594973Z",
+            "songId": 6,
+            "songUniqueId": "OCbgqDDCroIBGuQVbzXUV6U3D6uy5yKx0u44r5td",
+            "title": "FRISKY | Ambient Around The World - May 2020 - Alexander Gorshkov",
+            "playedTime": "2020-05-07T10:21:49Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/5"
+              }
+            }
+          },
+          {
+            "id": 6,
+            "uniqueId": "Bc7sRnZ32sezMh6q5T92FHQ0LRxqB2pC9zh5bef2",
+            "created": "2020-05-07T19:01:34.61507Z",
+            "songId": 7,
+            "songUniqueId": "2VFBTIFzRSoxSEgVdLKazDg7fRDN4wHTRda0jmLb",
+            "title": "FRISKY | Infinite Music - April 2020 - WindWill",
+            "playedTime": "2020-05-07T09:24:38Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/6"
+              }
+            }
+          },
+          {
+            "id": 7,
+            "uniqueId": "RKue1ftJkHvBkvCtRF0z5ShoZRYXRuATtS5PSS1c",
+            "created": "2020-05-07T19:01:34.632942Z",
+            "songId": 8,
+            "songUniqueId": "r9mqFCyrjGxcQjEltTt0wbToL5jDPF2Vl4D4r3YL",
+            "title": "FRISKY | No Tension - May 2020 - LastEDEN",
+            "playedTime": "2020-05-07T08:26:40Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/7"
+              }
+            }
+          },
+          {
+            "id": 8,
+            "uniqueId": "2XEQE4UbK3qvQDJF2oGogQlmoH493c11lqVDBrFF",
+            "created": "2020-05-07T19:01:34.650033Z",
+            "songId": 9,
+            "songUniqueId": "OiH6rybEvnBVsGe8mUVkR2A5WcNsy0YepSA4ibYU",
+            "title": "FRISKY | Nomos Sessions - May 2020 - Seb Dhajje",
+            "playedTime": "2020-05-07T07:26:22Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/8"
+              }
+            }
+          },
+          {
+            "id": 9,
+            "uniqueId": "X09zJVdAGpMU33yrtY5XOEi40Qazc73dE4dGvgMG",
+            "created": "2020-05-07T19:01:34.662876Z",
+            "songId": 10,
+            "songUniqueId": "s6kYpc5mCNqF1fspDCYHUUzM0lD7RpvYTKPzhYfo",
+            "title": "FRISKY | Fleeting Passage - April 2020 - Eric Shans",
+            "playedTime": "2020-05-07T06:26:59Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/9"
+              }
+            }
+          },
+          {
+            "id": 10,
+            "uniqueId": "1cAW96VaaHiSLLhNNZt5K86DzmHjFh7KOt9PY4Kt",
+            "created": "2020-05-07T19:01:34.678135Z",
+            "songId": 11,
+            "songUniqueId": "ihoYydtzFOenhIFwG8HLRaGg2ApqRgQXuPlSrlsX",
+            "title": "FRISKY | Waves - February 2020 - Xeuphoria",
+            "playedTime": "2020-05-07T05:22:09Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/songs/10"
+              }
+            }
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/radio-stations/5/songs"
+        }
+      },
+      "page": {
+        "size": 10,
+        "totalElements": 679,
+        "totalPages": 68,
+        "number": 0
+      }
+  },
+  "headers": {
+    "Content-Type": "application/hal+json"
+  }
+}
+}

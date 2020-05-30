@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/search/song?size=10&title=test&page=0"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "searchSongResultResponseList": [
+          {
+            "id": 6390,
+            "uniqueId": "KSlOe4NudBkm2oO1JeyKFoTVW27Ef1c3twNa77tg",
+            "title": "test"
+          },
+          {
+            "id": 3402,
+            "uniqueId": "TupxxwxrfSDZL1qBTwR7CjBs4b5Oi96JY2FpP3yN",
+            "title": "Brokenkites - Not a Test"
+          },
+          {
+            "id": 7176,
+            "uniqueId": "QHk7Dv9nOfqGfAt3ldFg3xnqG4ZQRywFtasn1VmX",
+            "title": "DJ Karda - DJ Karda - Test"
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/search/song?title=test"
+        }
+      },
+      "page": {
+        "size": 10,
+        "totalElements": 3,
+        "totalPages": 1,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}

@@ -22,7 +22,35 @@
     </div>
 </section>
 
+{{#googleAds}}
+    {{#enabled}}
+        {{#radioStationTopEnabled}}
+            <section class="section">
+                <div class="container">
+                    <div>
+                        {{>components/ads}}
+                    </div>
+                </div>
+            </section>
+        {{/radioStationTopEnabled}}
+    {{/enabled}}
+{{/googleAds}}
+
 {{>radio-station/streams}}
+
+{{#googleAds}}
+    {{#enabled}}
+        {{#radioStationDownEnabled}}
+            <section class="section">
+                <div class="container">
+                    <div>
+                        {{>components/ads}}
+                    </div>
+                </div>
+            </section>
+        {{/radioStationDownEnabled}}
+    {{/enabled}}
+{{/googleAds}}
 
 {{>radio-station/played-songs}}
 

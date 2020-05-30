@@ -13,3 +13,10 @@ application:
     domain: 'https://web.onlineradiosearch.com'
     itemsPerPage: 1000
     cacheTime: 24h
+  googleAds:
+    enabled: true
+    clientId: 'myGoogleId'
+    mainPageEnabled: true
+    radioStationTopEnabled: true
+    radioStationDownEnabled: true
+    searchPageTopEnabled: true

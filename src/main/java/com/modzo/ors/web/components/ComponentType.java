@@ -4,7 +4,8 @@ public enum ComponentType {
     LATEST_SEARCHES("commonLatestSearches"),
     PAGE_TITLE("commonPageTitle"),
     DESCRIPTION("commonDescription"),
-    KEYWORDS("commonKeywords");
+    KEYWORDS("commonKeywords"),
+    GOOGLE_ADS("googleAds");
 
     private final String type;
 

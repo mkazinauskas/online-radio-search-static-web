@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/radio-stations/5/streams?size=10"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "radioStationStreamResponseList": [
+          {
+            "id": 1,
+            "uniqueId": "JNq9vaWTgvnMCzok2NR1",
+            "created": "2020-05-07T18:50:24.769962Z",
+            "url": "http://listen.radionomy.com:80/-TheHits-Radio",
+            "bitRate": 192,
+            "type": "UNKNOWN",
+            "working": true,
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/streams/1"
+              }
+            }
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/radio-stations/5/streams"
+        }
+      },
+      "page": {
+        "size": 10,
+        "totalElements": 1,
+        "totalPages": 1,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}

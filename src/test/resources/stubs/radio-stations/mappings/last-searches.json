@@ -1,0 +1,524 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/last-searches?size=50"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "lastSearchResponseList": [
+          {
+            "id": "joFMZ3IBZsINPl1riOZJ",
+            "query": "ambient",
+            "type": "radiostation",
+            "created": "2020-05-30T20:35:49.208964Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "jIFdYnIBZsINPl1rxOY5",
+            "query": "vocal-house",
+            "type": "radiostation",
+            "created": "2020-05-29T21:36:34.100562Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "jYFdYnIBZsINPl1ryuZJ",
+            "query": "vocal house",
+            "type": "song",
+            "created": "2020-05-29T21:36:35.652511Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "i4FcYnIBZsINPl1rIebB",
+            "query": "zappa-stream-radio",
+            "type": "radiostation",
+            "created": "2020-05-29T21:34:46.974131Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "h4FbYnIBZsINPl1rVuYa",
+            "query": "Jazz",
+            "type": "genre",
+            "created": "2020-05-29T21:33:54.840984Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "ioFcYnIBZsINPl1rG-aR",
+            "query": "zappa stream radio",
+            "type": "song",
+            "created": "2020-05-29T21:34:45.390489Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "gYFKYnIBZsINPl1rxOYx",
+            "query": "soulful",
+            "type": "genre",
+            "created": "2020-05-29T21:15:48.918127Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "goFLYnIBZsINPl1rAuaO",
+            "query": "vocal house",
+            "type": "genre",
+            "created": "2020-05-29T21:16:04.895895Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "hIFLYnIBZsINPl1rZebX",
+            "query": "ambient",
+            "type": "song",
+            "created": "2020-05-29T21:16:30.312384Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "gIGUX3IBZsINPl1r7ean",
+            "query": "trance",
+            "type": "song",
+            "created": "2020-05-29T08:37:58.391441Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "fIGTX3IBZsINPl1r0OZK",
+            "query": "vocal",
+            "type": "genre",
+            "created": "2020-05-29T08:36:45.335231Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "foGTX3IBZsINPl1r7-bX",
+            "query": "vocal",
+            "type": "song",
+            "created": "2020-05-29T08:36:53.416614Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "f4GTX3IBZsINPl1r_OZ1",
+            "query": "vocal",
+            "type": "radiostation",
+            "created": "2020-05-29T08:36:56.646097Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "eYF_XXIBZsINPl1reeYl",
+            "query": "hot hits uk",
+            "type": "song",
+            "created": "2020-05-28T22:55:18.517071Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "e4GAXXIBZsINPl1rA-Z3",
+            "query": "hot-hits-uk",
+            "type": "radiostation",
+            "created": "2020-05-28T22:55:53.926988Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "eIFxXXIBZsINPl1rIeZ2",
+            "query": "karda",
+            "type": "song",
+            "created": "2020-05-28T22:39:38.576507Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "cYFbWHIBZsINPl1rgOYj",
+            "query": "club one",
+            "type": "song",
+            "created": "2020-05-27T22:57:56.50824Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "coFbWHIBZsINPl1rieay",
+            "query": "club-one",
+            "type": "radiostation",
+            "created": "2020-05-27T22:57:58.961235Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "doFcWHIBZsINPl1rVea8",
+            "query": "trance",
+            "type": "radiostation",
+            "created": "2020-05-27T22:58:51.193849Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "b4HuV3IBZsINPl1rT-ZO",
+            "query": "radio-clube-atlantico",
+            "type": "radiostation",
+            "created": "2020-05-27T20:58:40.720364Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "boHuV3IBZsINPl1rR-Y0",
+            "query": "radio clube atlantico",
+            "type": "song",
+            "created": "2020-05-27T20:58:38.631775Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "bYHnTXIBZsINPl1rNOb1",
+            "query": "radio-mdk",
+            "type": "radiostation",
+            "created": "2020-05-25T22:14:46.154531Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "bIHnTXIBZsINPl1rK-YD",
+            "query": "radio mdk",
+            "type": "song",
+            "created": "2020-05-25T22:14:43.608813Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "a4HmTXIBZsINPl1rFeao",
+            "query": "Live Mix",
+            "type": "genre",
+            "created": "2020-05-25T22:13:32.600549Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "aoHjTXIBZsINPl1riOa_",
+            "query": "la-parlata",
+            "type": "radiostation",
+            "created": "2020-05-25T22:10:45.464985Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "aIHjTXIBZsINPl1rVuYO",
+            "query": "la parlata",
+            "type": "song",
+            "created": "2020-05-25T22:10:32.48514Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "Z4FGTXIBZsINPl1rieYD",
+            "query": "ava max",
+            "type": "song",
+            "created": "2020-05-25T19:19:16.569413Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "YoGsRHIBZsINPl1rdOaY",
+            "query": "emisora del sauce",
+            "type": "song",
+            "created": "2020-05-24T03:14:03.71346Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "ZoGsRHIBZsINPl1r--Yz",
+            "query": "ambient",
+            "type": "genre",
+            "created": "2020-05-24T03:14:38.172406Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "ZYGsRHIBZsINPl1r4OZM",
+            "query": "the-lost-tracks-of-rock-and-roll",
+            "type": "radiostation",
+            "created": "2020-05-24T03:14:31.285234Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "YIGsRHIBZsINPl1rbeaM",
+            "query": "the lost tracks of rock and roll",
+            "type": "song",
+            "created": "2020-05-24T03:14:01.909664Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "YYGsRHIBZsINPl1rceYb",
+            "query": "live mix",
+            "type": "song",
+            "created": "2020-05-24T03:14:02.820421Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "UoElNXIBZsINPl1rU-Z9",
+            "query": "wazahh radio",
+            "type": "song",
+            "created": "2020-05-21T02:52:14.400946Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "S4EuKnIBZsINPl1rrObf",
+            "query": "accu radio",
+            "type": "song",
+            "created": "2020-05-18T23:46:28.758158Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "SYGZKHIBZsINPl1r_-Zn",
+            "query": "nu disco dj sets",
+            "type": "genre",
+            "created": "2020-05-18T16:24:28.289164Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "QIF2JHIBZsINPl1re-aL",
+            "query": "m 1",
+            "type": "song",
+            "created": "2020-05-17T21:07:13.177023Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "NYEgInIBZsINPl1rxeb4",
+            "query": "vanilla",
+            "type": "song",
+            "created": "2020-05-17T10:14:22.413875Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "NoEgInIBZsINPl1rzub2",
+            "query": "vanilla",
+            "type": "radiostation",
+            "created": "2020-05-17T10:14:24.715755Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "NIGnH3IBZsINPl1rH-am",
+            "query": "deep afro",
+            "type": "genre",
+            "created": "2020-05-16T22:42:16.302124Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "64HuGXIBZsINPl1r9uW4",
+            "query": "nu disco dj sets",
+            "type": "song",
+            "created": "2020-05-15T20:03:02.861038Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "pYHDGXIBZsINPl1rt-XN",
+            "query": "deep afro",
+            "type": "song",
+            "created": "2020-05-15T19:15:48.757204Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "mIG7GXIBZsINPl1rVeUn",
+            "query": "good",
+            "type": "song",
+            "created": "2020-05-15T19:06:39.225728Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "jYG2GXIBZsINPl1rVeUC",
+            "query": "hits",
+            "type": "song",
+            "created": "2020-05-15T19:01:11.514398Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "foGwGXIBZsINPl1rreVf",
+            "query": "deep-afro",
+            "type": "radiostation",
+            "created": "2020-05-15T18:55:00.925897Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          },
+          {
+            "id": "goGwGXIBZsINPl1r3uVV",
+            "query": "hits",
+            "type": "radiostation",
+            "created": "2020-05-15T18:55:13.459878Z",
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/last-searches"
+              }
+            }
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/last-searches"
+        }
+      },
+      "page": {
+        "size": 50,
+        "totalElements": 45,
+        "totalPages": 1,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}

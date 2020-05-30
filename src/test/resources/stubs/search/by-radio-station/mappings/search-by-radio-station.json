@@ -1,0 +1,99 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/search/radio-station?size=10&title=test&page=0"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "searchRadioStationResultResponseList": [
+          {
+            "id": 33186,
+            "uniqueId": "jdHRqExUccePg3p4aTxp",
+            "title": "Test CastHost.net",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 27163,
+            "uniqueId": "SXBewSDZMs7bGlDYN5eW",
+            "title": "Wolfradio TEST",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 17460,
+            "uniqueId": "aEcUzKvJZl6nCh4g0cWU",
+            "title": "TPPI Test",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 42448,
+            "uniqueId": "iTdvFiPWtGnWP0wkOOiB",
+            "title": "steki test",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 40696,
+            "uniqueId": "FYnNgJxrlyYkSUr75Thy",
+            "title": "Megasupadupa test",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 27991,
+            "uniqueId": "qNEZPYabKmsl65wOfivl",
+            "title": "(= Radio test =)",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 28881,
+            "uniqueId": "4pq1hwpzhibs2QvXDVFh",
+            "title": "test radio2015",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 18076,
+            "uniqueId": "st6ueN6G8tl9nxvFdLd4",
+            "title": "Test Cobaye Paris",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 23094,
+            "uniqueId": "C8UtB2ZSs2SZNfv989Xk",
+            "title": "The Test Radio",
+            "website": null,
+            "genres": []
+          },
+          {
+            "id": 25111,
+            "uniqueId": "Uiq2zqm8fO0BMZYNC31I",
+            "title": "radio test 76",
+            "website": null,
+            "genres": []
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/search/radio-station?title=test"
+        }
+      },
+      "page": {
+        "size": 10,
+        "totalElements": 55,
+        "totalPages": 6,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}
