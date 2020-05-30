@@ -10,6 +10,20 @@
     </div>
 </section>
 
+{{#googleAds}}
+    {{#enabled}}
+        {{#searchPageTopEnabled}}
+            <section class="section">
+                <div class="container">
+                    <div>
+                        {{>components/ads}}
+                    </div>
+                </div>
+            </section>
+        {{/searchPageTopEnabled}}
+    {{/enabled}}
+{{/googleAds}}
+
 <section class="section">
     <div class="container">
         {{>search/menu}}

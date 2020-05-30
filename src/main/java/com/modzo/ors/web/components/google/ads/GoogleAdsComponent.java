@@ -17,7 +17,8 @@ public class GoogleAdsComponent {
                 properties.getClientId(),
                 properties.isMainPageEnabled(),
                 properties.isRadioStationTopEnabled(),
-                properties.isRadioStationDownEnabled()
+                properties.isRadioStationDownEnabled(),
+                properties.isSearchPageTopEnabled()
         );
     }
 }

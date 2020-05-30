@@ -12,16 +12,20 @@ public class GoogleAdsData {
 
     private final boolean radioStationDownEnabled;
 
+    private final boolean searchPageTopEnabled;
+
     public GoogleAdsData(boolean enabled,
                          String clientId,
                          boolean mainPageEnabled,
                          boolean radioStationTopEnabled,
-                         boolean radioStationDownEnabled) {
+                         boolean radioStationDownEnabled,
+                         boolean searchPageTopEnabled) {
         this.enabled = enabled;
         this.clientId = clientId;
         this.mainPageEnabled = mainPageEnabled;
         this.radioStationTopEnabled = radioStationTopEnabled;
         this.radioStationDownEnabled = radioStationDownEnabled;
+        this.searchPageTopEnabled = searchPageTopEnabled;
     }
 
     public boolean isEnabled() {
@@ -44,4 +48,7 @@ public class GoogleAdsData {
         return radioStationDownEnabled;
     }
 
+    public boolean isSearchPageTopEnabled() {
+        return searchPageTopEnabled;
+    }
 }

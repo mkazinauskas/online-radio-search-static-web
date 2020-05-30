@@ -28,16 +28,20 @@ public class ApplicationProperties {
 
         private final boolean radioStationDownEnabled;
 
+        private final boolean searchPageTopEnabled;
+
         public GoogleAds(boolean enabled,
                          @NotNull String clientId,
                          boolean mainPageEnabled,
                          boolean radioStationTopEnabled,
-                         boolean radioStationDownEnabled) {
+                         boolean radioStationDownEnabled,
+                         boolean searchPageTopEnabled) {
             this.enabled = enabled;
             this.clientId = clientId;
             this.mainPageEnabled = mainPageEnabled;
             this.radioStationTopEnabled = radioStationTopEnabled;
             this.radioStationDownEnabled = radioStationDownEnabled;
+            this.searchPageTopEnabled = searchPageTopEnabled;
         }
 
         public boolean isEnabled() {
@@ -58,6 +62,10 @@ public class ApplicationProperties {
 
         public boolean isRadioStationDownEnabled() {
             return radioStationDownEnabled;
+        }
+
+        public boolean isSearchPageTopEnabled() {
+            return searchPageTopEnabled;
         }
     }
 

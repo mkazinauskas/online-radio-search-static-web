@@ -19,3 +19,4 @@ application:
     mainPageEnabled: true
     radioStationTopEnabled: true
     radioStationDownEnabled: true
+    searchPageTopEnabled: true

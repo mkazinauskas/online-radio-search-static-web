@@ -5,10 +5,24 @@
 <section class="hero is-info">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title">Found geres by title "{{query}}"</h1>
+            <h1 class="title">Found genres by title "{{query}}"</h1>
         </div>
     </div>
 </section>
+
+{{#googleAds}}
+    {{#enabled}}
+        {{#searchPageTopEnabled}}
+            <section class="section">
+                <div class="container">
+                    <div>
+                        {{>components/ads}}
+                    </div>
+                </div>
+            </section>
+        {{/searchPageTopEnabled}}
+    {{/enabled}}
+{{/googleAds}}
 
 <section class="section">
     <div class="container">
