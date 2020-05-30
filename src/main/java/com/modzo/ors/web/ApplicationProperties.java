@@ -3,8 +3,6 @@ package com.modzo.ors.web;
 import org.hibernate.validator.constraints.URL;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.NotBlank;
@@ -15,6 +13,29 @@ import java.time.Duration;
 @Validated
 @ConstructorBinding
 public class ApplicationProperties {
+
+    @ConstructorBinding
+    public static class GoogleAds {
+
+        private final boolean enabled;
+
+        @NotNull
+        private final String clientId;
+
+        public GoogleAds(boolean enabled,
+                         @NotNull String clientId) {
+            this.enabled = enabled;
+            this.clientId = clientId;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public String getClientId() {
+            return clientId;
+        }
+    }
 
     @ConstructorBinding
     public static class Sitemap {
@@ -56,9 +77,15 @@ public class ApplicationProperties {
     @NotNull
     private final Sitemap sitemap;
 
-    public ApplicationProperties(String apiUrl, Sitemap sitemap) {
+    @NotNull
+    private final GoogleAds googleAds;
+
+    public ApplicationProperties(String apiUrl,
+                                 Sitemap sitemap,
+                                 GoogleAds googleAds) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
+        this.googleAds = googleAds;
     }
 
     public String getApiUrl() {
@@ -67,5 +94,9 @@ public class ApplicationProperties {
 
     public Sitemap getSitemap() {
         return sitemap;
+    }
+
+    public GoogleAds getGoogleAds() {
+        return googleAds;
     }
 }

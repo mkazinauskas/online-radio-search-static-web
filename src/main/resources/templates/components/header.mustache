@@ -19,5 +19,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    {{#googleAds}}
+        {{#enabled}}
+            <script data-ad-client="{{clientId}}" async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        {{/enabled}}
+    {{/googleAds}}
 </head>
 <body>
