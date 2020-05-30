@@ -10,18 +10,20 @@
     </div>
 </section>
 
+{{#googleAds}}
+    {{#enabled}}
+        {{#mainPageEnabled}}
+            <section class="section">
+                <div class="container">
+                    {{>components/ads}}
+                </div>
+            </section>
+        {{/mainPageEnabled}}
+    {{/enabled}}
+{{/googleAds}}
+
 <section class="section">
     <div class="container">
-        {{#googleAds}}
-            {{#enabled}}
-                {{#mainPageEnabled}}
-                    <div>
-                        {{>components/ads}}
-                    </div>
-                {{/mainPageEnabled}}
-            {{/enabled}}
-        {{/googleAds}}
-
         {{#latestRadioStations}}
             {{#content}}
                 <a href="/radio-stations/{{seoTitle}}/{{id}}">

@@ -17,3 +17,5 @@ application:
     enabled: true
     clientId: 'myGoogleId'
     mainPageEnabled: true
+    radioStationTopEnabled: true
+    radioStationDownEnabled: true
