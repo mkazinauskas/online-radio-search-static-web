@@ -1,0 +1,39 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/search/genre?size=10&title=rock&page=0"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_embedded": {
+        "searchGenreResultResponseList": [
+          {
+            "id": 10,
+            "uniqueId": "6gquuYqipAc7QJnAwIjI",
+            "title": "Prog Rock"
+          },
+          {
+            "id": 8,
+            "uniqueId": "6aUyzjZv44zkgLzi4f0U",
+            "title": "Jazz, Prog Rock"
+          }
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.onlineradiosearch.com/search/genre?title=rock"
+        }
+      },
+      "page": {
+        "size": 10,
+        "totalElements": 2,
+        "totalPages": 1,
+        "number": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/hal+json"
+    }
+  }
+}
