@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "url": "/radio-stations?page=0&size=1"
+    "url": "/radio-stations?enabled=true&page=0&size=1"
   },
   "response": {
     "status": 200,

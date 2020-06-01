@@ -31,4 +31,9 @@ class RadioStationStreamService {
                 streams.getMetadata()
         );
     }
+
+    RadioStationStreamModel retrieve(Long id, Long streamId) {
+        EntityModel<RadioStationStreamResponse> streams = client.getRadioStationStream(id, streamId);
+        return new RadioStationStreamModel(streams.getContent());
+    }
 }

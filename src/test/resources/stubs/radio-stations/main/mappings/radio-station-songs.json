@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "url": "/radio-stations/5/songs?size=10&sort=id&sort=desc&page=0"
+    "url": "/radio-stations/5/songs?sort=id%2Cdesc&size=10&page=0"
   },
   "response": {
     "status": 200,
