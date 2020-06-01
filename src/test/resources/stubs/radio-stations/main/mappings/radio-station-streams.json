@@ -21,6 +21,20 @@
                 "href": "https://api.onlineradiosearch.com/radio-stations/5/streams/1"
               }
             }
+          },
+          {
+            "id": 2,
+            "uniqueId": "JNq9vaWTgvnMCzok2NR1",
+            "created": "2020-05-07T18:50:24.769962Z",
+            "url": "https://listen.radionomy.com:80/-secure",
+            "bitRate": 192,
+            "type": "UNKNOWN",
+            "working": true,
+            "_links": {
+              "self": {
+                "href": "https://api.onlineradiosearch.com/radio-stations/5/streams/2"
+              }
+            }
           }
         ]
       },
