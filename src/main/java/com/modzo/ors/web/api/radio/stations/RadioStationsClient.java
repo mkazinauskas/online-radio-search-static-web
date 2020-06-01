@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "radioStationsClient", url = "${application.apiUrl}")
 public interface RadioStationsClient {
 
-    @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}&sort=id%2Cdesc")
+    @GetMapping("/radio-stations?enabled=true&sort=id%2Cdesc&size=${application.radioStationsClient.size:1}")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStationsSortedDesc(@RequestParam("page") long page);
 
-    @GetMapping("/radio-stations")
+    @GetMapping("/radio-stations?enabled=true")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStations(@RequestParam("page") long page,
                                                                    @RequestParam("size") int size);
 
-    @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}")
+    @GetMapping("/radio-stations?enabled=true&size=${application.radioStationsClient.size:1}")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStationByPlayedSongId(
             @RequestParam("songId") long songId,
             @RequestParam("page") long page
     );
 
-    @GetMapping("/radio-stations?size=${application.radioStationsClient.size:1}")
+    @GetMapping("/radio-stations?enabled=true&size=${application.radioStationsClient.size:1}")
     PagedModel<EntityModel<RadioStationResponse>> getRadioStationByGenreId(
             @RequestParam("genreId") long genreId,
             @RequestParam("page") long page
