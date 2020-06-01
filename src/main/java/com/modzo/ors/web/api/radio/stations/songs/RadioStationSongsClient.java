@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface RadioStationSongsClient {
 
     @GetMapping(
-            "/radio-stations/{radioStationId}/songs?size=${application.radioStationSongsClient.size:1}&sort=id,desc"
+            "/radio-stations/{radioStationId}/songs?sort=id%2Cdesc"
+                    + "&size=${application.radioStationSongsClient.size:1}"
     )
     PagedModel<EntityModel<RadioStationSongResponse>> getRadioStationSongs(
             @PathVariable("radioStationId") long radioStationId,
