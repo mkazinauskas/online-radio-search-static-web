@@ -41,4 +41,8 @@ public class RadioStationStreamModel {
     public String getType() {
         return type;
     }
+
+    public boolean isSecureUrl(){
+        return this.url.startsWith("https://");
+    }
 }

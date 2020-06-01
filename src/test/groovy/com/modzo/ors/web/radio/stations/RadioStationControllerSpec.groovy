@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity
 class RadioStationControllerSpec extends IntegrationSpec {
 
     @Rule
-    WireMockRule wireMockRule = wireMockRule('stubs/radio-stations')
+    WireMockRule wireMockRule = wireMockRule('stubs/radio-stations/main')
 
     void 'should retrieve radio stations page'() {
         when:

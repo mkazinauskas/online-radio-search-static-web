@@ -11,7 +11,7 @@ class RadioStationService {
 
     private final RadioStationsClient client;
 
-    public RadioStationService(RadioStationsClient client) {
+    RadioStationService(RadioStationsClient client) {
         this.client = client;
     }
 
