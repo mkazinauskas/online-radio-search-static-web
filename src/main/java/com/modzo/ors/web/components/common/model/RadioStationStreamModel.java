@@ -42,7 +42,7 @@ public class RadioStationStreamModel {
         return type;
     }
 
-    public boolean isSecureUrl(){
+    public boolean isSecureUrl() {
         return this.url.startsWith("https://");
     }
 }
