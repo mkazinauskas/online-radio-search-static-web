@@ -103,6 +103,22 @@ public class ApplicationProperties {
         }
     }
 
+    @ConstructorBinding
+    public static class MobileApp {
+
+        @NotNull
+        @URL
+        private final String link;
+
+        public MobileApp(String link) {
+            this.link = link;
+        }
+
+        public String getLink() {
+            return link;
+        }
+    }
+
     @NotBlank
     private final String apiUrl;
 
@@ -112,12 +128,17 @@ public class ApplicationProperties {
     @NotNull
     private final GoogleAds googleAds;
 
+    @NotNull
+    private final MobileApp mobileApp;
+
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
-                                 GoogleAds googleAds) {
+                                 GoogleAds googleAds,
+                                 MobileApp mobileApp) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
+        this.mobileApp = mobileApp;
     }
 
     public String getApiUrl() {
@@ -130,5 +151,9 @@ public class ApplicationProperties {
 
     public GoogleAds getGoogleAds() {
         return googleAds;
+    }
+
+    public MobileApp getMobileApp() {
+        return mobileApp;
     }
 }

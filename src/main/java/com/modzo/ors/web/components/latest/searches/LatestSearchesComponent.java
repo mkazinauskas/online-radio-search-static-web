@@ -2,6 +2,8 @@ package com.modzo.ors.web.components.latest.searches;
 
 import com.modzo.ors.web.api.latest.searches.LastSearchResponse;
 import com.modzo.ors.web.api.latest.searches.LatestSearchesClient;
+import com.modzo.ors.web.components.CommonComponent;
+import com.modzo.ors.web.components.ComponentType;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.stereotype.Component;
@@ -11,7 +13,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Component
-public class LatestSearchesComponent {
+public class LatestSearchesComponent implements CommonComponent {
 
     private final LatestSearchesClient latestSearchesClient;
 
@@ -19,7 +21,13 @@ public class LatestSearchesComponent {
         this.latestSearchesClient = latestSearchesClient;
     }
 
-    public List<LatestSearchesData> retrieve() {
+    @Override
+    public ComponentType type() {
+        return ComponentType.LATEST_SEARCHES;
+    }
+
+    @Override
+    public Object data() {
         PagedModel<EntityModel<LastSearchResponse>> latestSearches = latestSearchesClient.getLatestSearches();
         List<LatestSearchesData.Query> searches = latestSearches.getContent().stream()
                 .map(EntityModel::getContent)

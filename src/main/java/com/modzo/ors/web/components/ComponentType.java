@@ -5,15 +5,16 @@ public enum ComponentType {
     PAGE_TITLE("commonPageTitle"),
     DESCRIPTION("commonDescription"),
     KEYWORDS("commonKeywords"),
-    GOOGLE_ADS("googleAds");
+    GOOGLE_ADS("googleAds"),
+    MOBILE_APP("mobileApp");
 
-    private final String type;
+    private final String name;
 
-    ComponentType(String type) {
-        this.type = type;
+    ComponentType(String name) {
+        this.name = name;
     }
 
-    public String getType() {
-        return type;
+    public String getName() {
+        return name;
     }
 }
