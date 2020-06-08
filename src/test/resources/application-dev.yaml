@@ -20,3 +20,5 @@ application:
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  mobile-app:
+    link: 'https://play.google.com/store/apps/details?id=modzo.com.onlineradiosearchmobile'

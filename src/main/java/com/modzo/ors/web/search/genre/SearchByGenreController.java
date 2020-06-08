@@ -28,13 +28,13 @@ public class SearchByGenreController {
     public ModelAndView searchBySong(@PathVariable("query") String query,
                                      Pageable pageable) {
         Map<String, Object> items = new HashMap<>(commonComponents.load());
-        items.put(ComponentType.PAGE_TITLE.getType(), query + " results of popular genres"
+        items.put(ComponentType.PAGE_TITLE.getName(), query + " results of popular genres"
                 + " at OnlineRadioSearch.com. Page " + (pageable.getPageNumber() + 1));
 
-        items.put(ComponentType.DESCRIPTION.getType(), query + " genre search results. Browse "
+        items.put(ComponentType.DESCRIPTION.getName(), query + " genre search results. Browse "
                 + query + " genre search results. Page " + (pageable.getPageNumber() + 1)
         );
-        items.put(ComponentType.KEYWORDS.getType(),
+        items.put(ComponentType.KEYWORDS.getName(),
                 query.replaceAll("-", ", ")
                         + ", search, genre, mp3, aac, wmv, streaming, dnas, music, "
                         + "m3u, pls"

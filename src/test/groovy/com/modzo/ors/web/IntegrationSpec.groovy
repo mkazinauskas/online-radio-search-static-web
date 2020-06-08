@@ -19,7 +19,7 @@ class IntegrationSpec extends Specification {
 
     static WireMockRule wireMockRule(String path) {
         new WireMockRule(
-                options().port(8081).usingFilesUnderClasspath(path)
+                options().port(7777).usingFilesUnderClasspath(path)
         )
     }
 

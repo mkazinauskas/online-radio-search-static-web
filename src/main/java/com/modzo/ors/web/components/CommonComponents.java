@@ -1,28 +1,22 @@
 package com.modzo.ors.web.components;
 
-import com.modzo.ors.web.components.google.ads.GoogleAdsComponent;
-import com.modzo.ors.web.components.latest.searches.LatestSearchesComponent;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Component
 public class CommonComponents {
 
-    private final LatestSearchesComponent latestSearchesComponent;
+    private final List<CommonComponent> components;
 
-    private final GoogleAdsComponent googleAdsComponent;
-
-    public CommonComponents(LatestSearchesComponent latestSearchesComponent,
-                            GoogleAdsComponent googleAdsComponent) {
-        this.latestSearchesComponent = latestSearchesComponent;
-        this.googleAdsComponent = googleAdsComponent;
+    public CommonComponents(List<CommonComponent> components) {
+        this.components = components;
     }
 
     public Map<String, Object> load() {
-        return Map.of(
-                ComponentType.LATEST_SEARCHES.getType(), latestSearchesComponent.retrieve(),
-                ComponentType.GOOGLE_ADS.getType(), googleAdsComponent.retrieve()
-        );
+        return components.stream()
+                .collect(Collectors.toMap(component -> component.type().getName(), CommonComponent::data));
     }
 }

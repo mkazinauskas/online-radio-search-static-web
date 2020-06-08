@@ -38,13 +38,13 @@ public class SearchBySongController {
                                      Pageable pageable) {
         Map<String, Object> items = new HashMap<>(commonComponents.load());
 
-        items.put(ComponentType.PAGE_TITLE.getType(), query + " results of popular mp3, "
+        items.put(ComponentType.PAGE_TITLE.getName(), query + " results of popular mp3, "
                 + "aac music and songs at OnlineRadioSearch.com. Page " + (pageable.getPageNumber() + 1));
 
-        items.put(ComponentType.DESCRIPTION.getType(), query + " music search results. Browse "
+        items.put(ComponentType.DESCRIPTION.getName(), query + " music search results. Browse "
                 + query + " mp3 songs from search results. Page " + (pageable.getPageNumber() + 1)
         );
-        items.put(ComponentType.KEYWORDS.getType(),
+        items.put(ComponentType.KEYWORDS.getName(),
                 query.replaceAll("-", ", ") + ", search, mp3, aac, wmv, streaming, dnas, music, "
                         + "m3u, pls"
         );

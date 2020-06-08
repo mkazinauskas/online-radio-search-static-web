@@ -1,4 +1,6 @@
 application:
-  apiUrl: 'http://localhost:8081'
+  apiUrl: 'http://localhost:7777'
   sitemap:
     itemsPerPage: 4
+  mobile-app:
+    link: 'https://play.google.com/store/apps/details?id=modzo.com.onlineradiosearchmobile'
