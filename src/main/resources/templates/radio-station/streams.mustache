@@ -37,16 +37,18 @@
                                                     <p>Url <i style="word-break: break-all">"{{url}}"</i> <strong> cannot be played on our site</strong>.</p>
                                                     <br/>
                                                     <p>Please select <b>"Play"</b> button to play in separate Window/Tab
-                                                        {{#mobileApp}}or <a alt="Online Radio Search Anroid App" target="_blank" href="{{link}}">Download
+                                                        {{#mobileApp}}or <a title="Online Radio Search Anroid App" target="_blank" href="{{link}}">Download
                                                             App</a>{{/mobileApp}}</p>
                                                 </section>
                                                 <footer class="modal-card-foot">
                                                     <a class="button is-primary"
                                                        target="_blank"
+                                                       title="Play {{url}} in new Window"
                                                        href="{{url}}">Play!
                                                     </a>
                                                     <a class="button"
                                                        target="_blank"
+                                                       title="Download {{url}} in .pls format"
                                                        href="/radio-stations/{{radioStation.seoTitle}}/{{radioStation.id}}/streams/{{id}}/pls">Download
                                                         .pls</a>
                                                 </footer>
