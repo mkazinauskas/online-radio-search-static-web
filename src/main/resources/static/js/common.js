@@ -17,6 +17,9 @@ $(document).ready(function () {
         $(target + ' .delete').click(function (event) {
             $(target).removeClass('is-active');
         });
+        $(target + ' .modal-background').click(function (event) {
+            $(target).removeClass('is-active');
+        });
     });
 
 });

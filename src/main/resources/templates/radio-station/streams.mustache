@@ -34,11 +34,11 @@
                                                     <button class="delete" aria-label="close"></button>
                                                 </header>
                                                 <section class="modal-card-body">
-                                                    <p>Url <i style="word-break: break-all">"{{url}}"</i> <strong>in not in "https" protocol</strong>.</p>
+                                                    <p>Url <i style="word-break: break-all">"{{url}}"</i> <strong> cannot be played on our site</strong>.</p>
                                                     <br/>
-                                                    <p>Due to security reasons modern browsers does not allow playback in our site.</p>
-                                                    <br/>
-                                                    <p>Please select <b>"Play"</b> button to play in separate Window/Tab</p>
+                                                    <p>Please select <b>"Play"</b> button to play in separate Window/Tab
+                                                        {{#mobileApp}}or <a alt="Online Radio Search Anroid App" target="_blank" href="{{link}}">Download
+                                                            App</a>{{/mobileApp}}</p>
                                                 </section>
                                                 <footer class="modal-card-foot">
                                                     <a class="button is-primary"
