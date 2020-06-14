@@ -66,7 +66,7 @@ public class RadioStationController {
         items.put("radioStationStreams", stationStreamService.retrieve(id));
         items.put("radioStationSongs", radioStationSongsService.retrieve(id, pageable));
         items.put("addThis", properties.getAddThis());
-        items.put("discus", properties.getDiscus());
+        items.put("disqus", properties.getDisqus());
         return new ModelAndView("radio-station/index", items);
     }
 }

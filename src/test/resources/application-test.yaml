@@ -9,7 +9,7 @@ application:
   addThis:
     enabled: true
     scriptLocation: 'addThisScriptLocationFromProperties'
-  discus:
+  disqus:
     enabled: true
     accountName: 'discusAccountName'
   googleAds:
