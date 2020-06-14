@@ -1,0 +1,17 @@
+{{#discus}}
+    {{#enabled}}
+        <section class="section" style="padding: 0rem 1.5rem">
+            <div class="container">
+                  <div id="disqus_thread"></div>
+                  <script>
+                  var disqus_config = function () {
+                  this.page.url = '/radio-stations/{{radioStation.seoTitle}}/{{radioStation.id}}';
+                  this.page.identifier = '{{radioStation.id}}';
+                  };
+                  </script>
+            </div>
+        </section>
+    {{/enabled}}
+{{/discus}}
+
+

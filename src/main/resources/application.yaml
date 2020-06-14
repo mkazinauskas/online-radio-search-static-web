@@ -31,3 +31,6 @@ application:
   addThis:
     enabled: false
     scriptLocation: ''
+  discus:
+    enabled: false
+    accountName: ''

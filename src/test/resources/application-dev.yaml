@@ -1,7 +1,7 @@
 server.port: 3002
 
 application:
-  apiUrl: 'localhost:8080'
+  apiUrl: 'https://api.onlineradiosearch.com'
   latestSearchesClient.size: 50
   radioStationSongsClient.size: 10
   radioStreamsClient.size: 10
@@ -25,3 +25,6 @@ application:
   addThis:
     enabled: true
     scriptLocation: '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee546a59b18cb8b'
+  discus:
+    enabled: true
+    accountName: 'onlineradiosearch-com'

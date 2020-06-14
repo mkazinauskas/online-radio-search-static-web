@@ -140,6 +140,27 @@ public class ApplicationProperties {
         }
     }
 
+    @ConstructorBinding
+    public static class Discus {
+
+        private final boolean enabled;
+
+        private final String accountName;
+
+        public Discus(boolean enabled, String accountName) {
+            this.enabled = enabled;
+            this.accountName = accountName;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public String getAccountName() {
+            return accountName;
+        }
+    }
+
     @NotBlank
     private final String apiUrl;
 
@@ -155,16 +176,21 @@ public class ApplicationProperties {
     @NotNull
     private final AddThis addThis;
 
+    @NotNull
+    private final Discus discus;
+
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
                                  GoogleAds googleAds,
                                  MobileApp mobileApp,
-                                 AddThis addThis) {
+                                 AddThis addThis,
+                                 Discus discus) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
         this.mobileApp = mobileApp;
         this.addThis = addThis;
+        this.discus = discus;
     }
 
     public String getApiUrl() {
@@ -185,5 +211,9 @@ public class ApplicationProperties {
 
     public AddThis getAddThis() {
         return addThis;
+    }
+
+    public Discus getDiscus() {
+        return discus;
     }
 }
