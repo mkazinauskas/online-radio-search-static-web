@@ -1,6 +1,18 @@
 application:
   apiUrl: 'http://localhost:7777'
   sitemap:
+    domain: 'https://web.onlineradiosearch.com'
     itemsPerPage: 4
+    cacheTime: 24h
   mobile-app:
     link: 'https://play.google.com/store/apps/details?id=modzo.com.onlineradiosearchmobile'
+  addThis:
+    enabled: true
+    scriptLocation: 'addThisScriptLocationFromProperties'
+  googleAds:
+    enabled: true
+    clientId: 'myGoogleId'
+    mainPageEnabled: true
+    radioStationTopEnabled: true
+    radioStationDownEnabled: true
+    searchPageTopEnabled: true

@@ -1,7 +1,7 @@
 server.port: 3002
 
 application:
-  apiUrl: 'https://api.onlineradiosearch.com'
+  apiUrl: 'localhost:8080'
   latestSearchesClient.size: 50
   radioStationSongsClient.size: 10
   radioStreamsClient.size: 10
@@ -22,3 +22,6 @@ application:
     searchPageTopEnabled: true
   mobile-app:
     link: 'https://play.google.com/store/apps/details?id=modzo.com.onlineradiosearchmobile'
+  addThis:
+    enabled: true
+    scriptLocation: '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee546a59b18cb8b'
