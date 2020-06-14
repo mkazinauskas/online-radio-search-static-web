@@ -25,6 +25,6 @@ application:
   addThis:
     enabled: true
     scriptLocation: '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee546a59b18cb8b'
-  discus:
+  disqus:
     enabled: true
     accountName: 'onlineradiosearch-com'

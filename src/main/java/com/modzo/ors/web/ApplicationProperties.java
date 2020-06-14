@@ -141,13 +141,13 @@ public class ApplicationProperties {
     }
 
     @ConstructorBinding
-    public static class Discus {
+    public static class Disqus {
 
         private final boolean enabled;
 
         private final String accountName;
 
-        public Discus(boolean enabled, String accountName) {
+        public Disqus(boolean enabled, String accountName) {
             this.enabled = enabled;
             this.accountName = accountName;
         }
@@ -177,20 +177,20 @@ public class ApplicationProperties {
     private final AddThis addThis;
 
     @NotNull
-    private final Discus discus;
+    private final Disqus disqus;
 
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
                                  GoogleAds googleAds,
                                  MobileApp mobileApp,
                                  AddThis addThis,
-                                 Discus discus) {
+                                 Disqus disqus) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
         this.mobileApp = mobileApp;
         this.addThis = addThis;
-        this.discus = discus;
+        this.disqus = disqus;
     }
 
     public String getApiUrl() {
@@ -213,7 +213,7 @@ public class ApplicationProperties {
         return addThis;
     }
 
-    public Discus getDiscus() {
-        return discus;
+    public Disqus getDisqus() {
+        return disqus;
     }
 }

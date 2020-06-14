@@ -31,6 +31,6 @@ application:
   addThis:
     enabled: false
     scriptLocation: ''
-  discus:
+  disqus:
     enabled: false
     accountName: ''
