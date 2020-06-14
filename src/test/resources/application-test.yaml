@@ -9,6 +9,9 @@ application:
   addThis:
     enabled: true
     scriptLocation: 'addThisScriptLocationFromProperties'
+  discus:
+    enabled: true
+    acountName: 'discusAccountName'
   googleAds:
     enabled: true
     clientId: 'myGoogleId'
