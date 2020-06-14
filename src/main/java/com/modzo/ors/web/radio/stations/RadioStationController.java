@@ -1,5 +1,6 @@
 package com.modzo.ors.web.radio.stations;
 
+import com.modzo.ors.web.ApplicationProperties;
 import com.modzo.ors.web.components.CommonComponents;
 import com.modzo.ors.web.components.ComponentType;
 import com.modzo.ors.web.components.common.model.RadioStationModel;
@@ -24,14 +25,18 @@ public class RadioStationController {
 
     private final RadioStationSongsService radioStationSongsService;
 
+    private final ApplicationProperties properties;
+
     public RadioStationController(CommonComponents commonComponents,
                                   RadioStationService radioStationService,
                                   RadioStationStreamService stationStreamService,
-                                  RadioStationSongsService radioStationSongsService) {
+                                  RadioStationSongsService radioStationSongsService,
+                                  ApplicationProperties properties) {
         this.commonComponents = commonComponents;
         this.radioStationService = radioStationService;
         this.stationStreamService = stationStreamService;
         this.radioStationSongsService = radioStationSongsService;
+        this.properties = properties;
     }
 
     @GetMapping("/radio-stations/{radioStationSeoTitle}/{id}")
@@ -60,6 +65,7 @@ public class RadioStationController {
         items.put("radioStation", radioStation);
         items.put("radioStationStreams", stationStreamService.retrieve(id));
         items.put("radioStationSongs", radioStationSongsService.retrieve(id, pageable));
+        items.put("addThis", properties.getAddThis());
         return new ModelAndView("radio-station/index", items);
     }
 }

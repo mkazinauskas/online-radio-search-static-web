@@ -18,13 +18,16 @@ application:
   searchSongClient.size: 10
   searchGenreClient.size: 10
   sitemap:
-    domain: 'https://web.onlineradiosearch.com'
+    domain: 'https://onlineradiosearch.com'
     itemsPerPage: 1000
     cacheTime: 24h
   googleAds:
-    enabled: true
+    enabled: false
     clientId: 'myGoogleId'
     mainPageEnabled: true
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  addThis:
+    enabled: false
+    scriptLocation: ''

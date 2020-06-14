@@ -1,4 +1,4 @@
-FROM openjdk:11.0.7-jre
+FROM openjdk:11.0.7-jre-slim-buster
 RUN mkdir /opt/app
 WORKDIR /opt/app
 COPY build/libs/*.jar /opt/app/web.jar

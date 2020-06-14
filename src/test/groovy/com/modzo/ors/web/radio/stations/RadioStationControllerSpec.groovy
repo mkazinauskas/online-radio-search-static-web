@@ -21,6 +21,7 @@ class RadioStationControllerSpec extends IntegrationSpec {
             result.body.contains('<span>Some google ads</span>')
         and:
             result.body.contains('<h1 class="title">&quot;The Hits&quot; Radio')
+            result.body.contains('addThisScriptLocationFromProperties')
             result.body.contains('<p class="modal-card-title">Information</p>')
             result.body.contains('href="/radio-stations/the-hits-radio/5/streams/1/pls">Download')
             result.body.contains('<source src="https://listen.radionomy.com:80/-secure" type="audio/ogg">')

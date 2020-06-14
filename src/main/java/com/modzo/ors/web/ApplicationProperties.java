@@ -119,6 +119,27 @@ public class ApplicationProperties {
         }
     }
 
+    @ConstructorBinding
+    public static class AddThis {
+
+        private final boolean enabled;
+
+        private final String scriptLocation;
+
+        public AddThis(boolean enabled, String scriptLocation) {
+            this.enabled = enabled;
+            this.scriptLocation = scriptLocation;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public String getScriptLocation() {
+            return scriptLocation;
+        }
+    }
+
     @NotBlank
     private final String apiUrl;
 
@@ -131,14 +152,19 @@ public class ApplicationProperties {
     @NotNull
     private final MobileApp mobileApp;
 
+    @NotNull
+    private final AddThis addThis;
+
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
                                  GoogleAds googleAds,
-                                 MobileApp mobileApp) {
+                                 MobileApp mobileApp,
+                                 AddThis addThis) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
         this.mobileApp = mobileApp;
+        this.addThis = addThis;
     }
 
     public String getApiUrl() {
@@ -155,5 +181,9 @@ public class ApplicationProperties {
 
     public MobileApp getMobileApp() {
         return mobileApp;
+    }
+
+    public AddThis getAddThis() {
+        return addThis;
     }
 }
