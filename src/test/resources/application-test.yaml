@@ -11,7 +11,7 @@ application:
     scriptLocation: 'addThisScriptLocationFromProperties'
   discus:
     enabled: true
-    acountName: 'discusAccountName'
+    accountName: 'discusAccountName'
   googleAds:
     enabled: true
     clientId: 'myGoogleId'
