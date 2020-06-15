@@ -33,4 +33,5 @@ application:
     scriptLocation: ''
   disqus:
     enabled: false
+    urlPrefix: 'http://localhost'
     accountName: ''

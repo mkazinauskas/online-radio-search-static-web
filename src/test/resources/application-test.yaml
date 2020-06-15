@@ -11,6 +11,7 @@ application:
     scriptLocation: 'addThisScriptLocationFromProperties'
   disqus:
     enabled: true
+    urlPrefix: 'http://localhost'
     accountName: 'discusAccountName'
   googleAds:
     enabled: true
