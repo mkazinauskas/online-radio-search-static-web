@@ -145,15 +145,24 @@ public class ApplicationProperties {
 
         private final boolean enabled;
 
+        private final String urlPrefix;
+
         private final String accountName;
 
-        public Disqus(boolean enabled, String accountName) {
+        public Disqus(boolean enabled,
+                      String urlPrefix,
+                      String accountName) {
             this.enabled = enabled;
+            this.urlPrefix = urlPrefix;
             this.accountName = accountName;
         }
 
         public boolean isEnabled() {
             return enabled;
+        }
+
+        public String getUrlPrefix() {
+            return urlPrefix;
         }
 
         public String getAccountName() {

@@ -27,4 +27,5 @@ application:
     scriptLocation: '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee546a59b18cb8b'
   disqus:
     enabled: true
+    urlPrefix: 'http://localhost:3002'
     accountName: 'onlineradiosearch-com'
