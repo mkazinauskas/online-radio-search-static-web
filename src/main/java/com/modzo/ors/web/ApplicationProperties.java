@@ -170,6 +170,27 @@ public class ApplicationProperties {
         }
     }
 
+    @ConstructorBinding
+    public static class GoogleAnalytics {
+
+        private final boolean enabled;
+
+        private final String userId;
+
+        public GoogleAnalytics(boolean enabled, String userId) {
+            this.enabled = enabled;
+            this.userId = userId;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public String getUserId() {
+            return userId;
+        }
+    }
+
     @NotBlank
     private final String apiUrl;
 
@@ -188,18 +209,23 @@ public class ApplicationProperties {
     @NotNull
     private final Disqus disqus;
 
+    @NotNull
+    private final GoogleAnalytics googleAnalytics;
+
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
                                  GoogleAds googleAds,
                                  MobileApp mobileApp,
                                  AddThis addThis,
-                                 Disqus disqus) {
+                                 Disqus disqus,
+                                 GoogleAnalytics googleAnalytics) {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
         this.mobileApp = mobileApp;
         this.addThis = addThis;
         this.disqus = disqus;
+        this.googleAnalytics = googleAnalytics;
     }
 
     public String getApiUrl() {
@@ -224,5 +250,9 @@ public class ApplicationProperties {
 
     public Disqus getDisqus() {
         return disqus;
+    }
+
+    public GoogleAnalytics getGoogleAnalytics() {
+        return googleAnalytics;
     }
 }

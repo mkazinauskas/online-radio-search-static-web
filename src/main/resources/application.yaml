@@ -28,6 +28,9 @@ application:
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  googleAnalytics:
+    enabled: false
+    userId: ''
   addThis:
     enabled: false
     scriptLocation: ''

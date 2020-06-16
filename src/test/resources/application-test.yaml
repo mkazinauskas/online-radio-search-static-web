@@ -13,6 +13,9 @@ application:
     enabled: true
     urlPrefix: 'http://localhost'
     accountName: 'discusAccountName'
+  googleAnalytics:
+    enabled: true
+    userId: 'testGoogleAnalyticsUserId'
   googleAds:
     enabled: true
     clientId: 'myGoogleId'
