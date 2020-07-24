@@ -1,4 +1,4 @@
-package com.modzo.ors.web.components.google.ads;
+package com.modzo.ors.web.components.ads.google;
 
 public class GoogleAdsData {
 

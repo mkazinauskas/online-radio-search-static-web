@@ -20,6 +20,9 @@ application:
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  propellerAds:
+    enabled: true
+    domainVerificationCode: 'myDomainVerificationCode'
   googleAnalytics:
     enabled: true
     userId: 'test'

@@ -19,7 +19,6 @@ public class ApplicationProperties {
 
         private final boolean enabled;
 
-        @NotNull
         private final String clientId;
 
         private final boolean mainPageEnabled;
@@ -31,7 +30,7 @@ public class ApplicationProperties {
         private final boolean searchPageTopEnabled;
 
         public GoogleAds(boolean enabled,
-                         @NotNull String clientId,
+                         String clientId,
                          boolean mainPageEnabled,
                          boolean radioStationTopEnabled,
                          boolean radioStationDownEnabled,
@@ -66,6 +65,27 @@ public class ApplicationProperties {
 
         public boolean isSearchPageTopEnabled() {
             return searchPageTopEnabled;
+        }
+    }
+
+    @ConstructorBinding
+    public static class PropellerAds {
+
+        private final boolean enabled;
+
+        private final String domainVerificationCode;
+
+        public PropellerAds(boolean enabled, String domainVerificationCode) {
+            this.enabled = enabled;
+            this.domainVerificationCode = domainVerificationCode;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public String getDomainVerificationCode() {
+            return domainVerificationCode;
         }
     }
 
@@ -201,6 +221,9 @@ public class ApplicationProperties {
     private final GoogleAds googleAds;
 
     @NotNull
+    private final PropellerAds propellerAds;
+
+    @NotNull
     private final MobileApp mobileApp;
 
     @NotNull
@@ -215,6 +238,7 @@ public class ApplicationProperties {
     public ApplicationProperties(String apiUrl,
                                  Sitemap sitemap,
                                  GoogleAds googleAds,
+                                 PropellerAds propellerAds,
                                  MobileApp mobileApp,
                                  AddThis addThis,
                                  Disqus disqus,
@@ -222,6 +246,7 @@ public class ApplicationProperties {
         this.apiUrl = apiUrl;
         this.sitemap = sitemap;
         this.googleAds = googleAds;
+        this.propellerAds = propellerAds;
         this.mobileApp = mobileApp;
         this.addThis = addThis;
         this.disqus = disqus;
@@ -238,6 +263,10 @@ public class ApplicationProperties {
 
     public GoogleAds getGoogleAds() {
         return googleAds;
+    }
+
+    public PropellerAds getPropellerAds() {
+        return propellerAds;
     }
 
     public MobileApp getMobileApp() {

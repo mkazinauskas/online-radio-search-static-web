@@ -1,4 +1,4 @@
-package com.modzo.ors.web.components.google.ads;
+package com.modzo.ors.web.components.ads.google;
 
 import com.modzo.ors.web.ApplicationProperties;
 import com.modzo.ors.web.components.CommonComponent;

@@ -28,6 +28,9 @@ application:
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  propellerAds:
+    enabled: false
+    domainVerificationCode: 'myDomainVerificationCode'
   googleAnalytics:
     enabled: false
     userId: ''

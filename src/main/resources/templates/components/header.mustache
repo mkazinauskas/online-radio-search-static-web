@@ -25,5 +25,10 @@
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         {{/enabled}}
     {{/googleAds}}
+    {{#propellerAds}}
+        {{#enabled}}
+            <meta name="propeller" content="{{domainVerificationCode}}"/>
+        {{/enabled}}
+    {{/propellerAds}}
 </head>
 <body>

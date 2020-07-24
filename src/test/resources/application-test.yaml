@@ -23,3 +23,6 @@ application:
     radioStationTopEnabled: true
     radioStationDownEnabled: true
     searchPageTopEnabled: true
+  propellerAds:
+    enabled: true
+    domainVerificationCode: 'testPropellerAdsDomainVerificationCode'
