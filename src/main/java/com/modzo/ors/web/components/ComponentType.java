@@ -6,6 +6,7 @@ public enum ComponentType {
     DESCRIPTION("commonDescription"),
     KEYWORDS("commonKeywords"),
     GOOGLE_ADS("googleAds"),
+    PROPELLER_ADS("propellerAds"),
     GOOGLE_ANALYTICS("googleAnalytics"),
     MOBILE_APP("mobileApp");
 
