@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,10 +31,11 @@ public class SearchByRadioStationController {
     }
 
     @PostMapping("/search/by-radio-station")
-    public ModelAndView searchBySongToRedirect(HttpServletRequest request) {
+    public ModelAndView searchRadioStationRedirect(HttpServletRequest request) throws UnsupportedEncodingException {
         String query = request.getParameter("query");
         String seoQuery = SeoText.from(query);
-        return new ModelAndView("redirect:/search/by-radio-station/" + seoQuery);
+        return new ModelAndView("redirect:/search/by-radio-station/"
+                + URLEncoder.encode(seoQuery, StandardCharsets.UTF_8));
     }
 
     @GetMapping("/search/by-radio-station/{query}")

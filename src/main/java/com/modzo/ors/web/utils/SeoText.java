@@ -14,7 +14,7 @@ public class SeoText {
                 .trim()
                 .replaceAll(" ?- ?", "-") // remove spaces around hyphens
                 .replaceAll("[ ']", "-") // turn spaces and quotes into hyphens
-                .replaceAll("[^0-9a-zA-Z-]", "")
+                .replaceAll("[^\\p{L}\\p{Nd}-]+", "")
                 .replaceAll("(-)\\1+", "-");
     }
 
