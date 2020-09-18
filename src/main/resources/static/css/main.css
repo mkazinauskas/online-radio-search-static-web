@@ -11,6 +11,10 @@
     word-break: break-all;
 }
 
+.latest-searches button {
+    margin: 2px;
+}
+
 .privacy-text h3, .privacy-text h4 {
     margin-top: 1em;
 }
