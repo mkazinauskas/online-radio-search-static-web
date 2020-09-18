@@ -8,19 +8,19 @@ class SeoTextSpec extends Specification {
         when:
             String result = SeoText.from("Ludwig van Beethoven (1770-1827) - 'Sonatine' per")
         then:
-            result == "ludwig-van-beethoven-1770-1827-sonatine-per"
+            result == 'ludwig-van-beethoven-1770-1827-sonatine-per'
     }
 
     void 'should Trim White Space'() {
         when:
-            String result = SeoText.from("Test   ")
+            String result = SeoText.from('Test   ')
         then:
             result == 'test'
     }
 
     void 'should Leave Arabic Symbols'() {
         when:
-            String result = SeoText.from("إذاعة &rlm;الق")
+            String result = SeoText.from('إذاعة &rlm;الق')
         then:
             result == 'إذاعة-rlmالق'
     }
