@@ -24,7 +24,8 @@ class SearchBySongControllerSpec extends IntegrationSpec {
             result.body.contains('<a href="/radio-stations/by-played-song/test/6390">')
         and:
             result.body.contains('<h2>Latest searches</h2>')
-            result.body.contains('<a href="/search/by-radio-station/hits">hits</a>')
+            result.body.contains('<a href="/search/by-song/hits"><button ' +
+                    'class="button is-small is-rounded">hits</button></a>')
     }
 
 }
