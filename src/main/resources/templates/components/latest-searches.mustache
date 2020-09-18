@@ -1,16 +1,16 @@
 <div class="content has-text-centered">
     <h2>Latest searches</h2>
-    <p>
+    <p class="latest-searches">
         {{ #commonLatestSearches }}
         {{ #queries }}
         {{#songType}}
-            <a href="/search/by-song/{{seoQuery}}">{{query}}</a>
+            <a href="/search/by-song/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
         {{/songType}}
         {{#genreType}}
-            <a href="/search/by-genre/{{seoQuery}}">{{query}}</a>
+            <a href="/search/by-genre/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
         {{/genreType}}
         {{#radioStationType}}
-            <a href="/search/by-radio-station/{{seoQuery}}">{{query}}</a>
+            <a href="/search/by-radio-station/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
         {{/radioStationType}}
         {{ /queries }}
         {{ /commonLatestSearches }}

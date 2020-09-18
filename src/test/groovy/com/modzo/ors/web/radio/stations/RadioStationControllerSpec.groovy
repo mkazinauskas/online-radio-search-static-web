@@ -30,6 +30,7 @@ class RadioStationControllerSpec extends IntegrationSpec {
             result.body.contains('<meta name="propeller" content="testPropellerAdsDomainVerificationCode"/>')
         and:
             result.body.contains('<h2>Latest searches</h2>')
-            result.body.contains('<a href="/search/by-radio-station/hits">hits</a>')
+            result.body.contains('<a href="/search/by-song/hits"><button ' +
+                    'class="button is-small is-rounded">hits</button></a>')
     }
 }
