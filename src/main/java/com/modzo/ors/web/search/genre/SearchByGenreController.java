@@ -25,14 +25,16 @@ public class SearchByGenreController {
     }
 
     @GetMapping("/search/by-genre/{query}")
-    public ModelAndView searchBySong(@PathVariable("query") String query,
+    public ModelAndView searchByGenre(@PathVariable("query") String query,
                                      Pageable pageable) {
+        String queryText = SeoText.revert(query);
+
         Map<String, Object> items = new HashMap<>(commonComponents.load());
-        items.put(ComponentType.PAGE_TITLE.getName(), query + " results of popular genres"
+        items.put(ComponentType.PAGE_TITLE.getName(), queryText + " results of popular genres"
                 + " at OnlineRadioSearch.com. Page " + (pageable.getPageNumber() + 1));
 
-        items.put(ComponentType.DESCRIPTION.getName(), query + " genre search results. Browse "
-                + query + " genre search results. Page " + (pageable.getPageNumber() + 1)
+        items.put(ComponentType.DESCRIPTION.getName(), queryText + " genre search results. Browse "
+                + queryText + " genre search results. Page " + (pageable.getPageNumber() + 1)
         );
         items.put(ComponentType.KEYWORDS.getName(),
                 query.replaceAll("-", ", ")
@@ -40,8 +42,8 @@ public class SearchByGenreController {
                         + "m3u, pls"
         );
         items.put("seoQuery", SeoText.from(query));
-        items.put("query", SeoText.revert(query));
-        items.put("foundGenres", searchByGenreService.retrieve(query, pageable));
+        items.put("query", queryText);
+        items.put("foundGenres", searchByGenreService.retrieve(queryText, pageable));
         items.put("submenu-search-by-genre", true);
         return new ModelAndView("search/by-genre/index", items);
     }
