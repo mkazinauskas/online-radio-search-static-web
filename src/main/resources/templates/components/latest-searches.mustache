@@ -4,13 +4,13 @@
         {{ #commonLatestSearches }}
         {{ #queries }}
         {{#songType}}
-            <a href="/search/by-song/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
+            <a href="/search/by-song/{{seoQuery}}"><button class="button is-small is-rounded is-warning is-light">{{query}} song</button></a>
         {{/songType}}
         {{#genreType}}
-            <a href="/search/by-genre/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
+            <a href="/search/by-genre/{{seoQuery}}"><button class="button is-small is-rounded is-info is-light">{{query}} station</button></a>
         {{/genreType}}
         {{#radioStationType}}
-            <a href="/search/by-radio-station/{{seoQuery}}"><button class="button is-small is-rounded">{{query}}</button></a>
+            <a href="/search/by-radio-station/{{seoQuery}}"><button class="button is-small is-rounded is-success is-light">{{query}} genre</button></a>
         {{/radioStationType}}
         {{ /queries }}
         {{ /commonLatestSearches }}

@@ -36,13 +36,15 @@ public class SearchBySongController {
     @GetMapping("/search/by-song/{query}")
     public ModelAndView searchBySong(@PathVariable("query") String query,
                                      Pageable pageable) {
+        String queryText = SeoText.revert(query);
+
         Map<String, Object> items = new HashMap<>(commonComponents.load());
 
-        items.put(ComponentType.PAGE_TITLE.getName(), query + " results of popular mp3, "
+        items.put(ComponentType.PAGE_TITLE.getName(), queryText + " results of popular mp3, "
                 + "aac music and songs at OnlineRadioSearch.com. Page " + (pageable.getPageNumber() + 1));
 
-        items.put(ComponentType.DESCRIPTION.getName(), query + " music search results. Browse "
-                + query + " mp3 songs from search results. Page " + (pageable.getPageNumber() + 1)
+        items.put(ComponentType.DESCRIPTION.getName(), queryText + " music search results. Browse "
+                + queryText + " mp3 songs from search results. Page " + (pageable.getPageNumber() + 1)
         );
         items.put(ComponentType.KEYWORDS.getName(),
                 query.replaceAll("-", ", ") + ", search, mp3, aac, wmv, streaming, dnas, music, "
@@ -50,8 +52,8 @@ public class SearchBySongController {
         );
 
         items.put("seoQuery", SeoText.from(query));
-        items.put("query", SeoText.revert(query));
-        items.put("foundSongs", searchBySongService.retrieve(query, pageable));
+        items.put("query", queryText);
+        items.put("foundSongs", searchBySongService.retrieve(queryText, pageable));
         items.put("submenu-search-by-song", true);
         return new ModelAndView("search/by-song/index", items);
     }

@@ -35,13 +35,14 @@ public class SearchByRadioStationController {
     }
 
     @GetMapping("/search/by-radio-station/{query}")
-    public ModelAndView searchBySong(@PathVariable("query") String query, Pageable pageable) {
+    public ModelAndView searchByRadioStation(@PathVariable("query") String query, Pageable pageable) {
+        String queryText = SeoText.revert(query);
         Map<String, Object> items = new HashMap<>(commonComponents.load());
-        items.put(ComponentType.PAGE_TITLE.getName(), query + " results of free online radio stations, free mp3, "
+        items.put(ComponentType.PAGE_TITLE.getName(), queryText + " results of free online radio stations, free mp3, "
                 + "aac music at OnlineRadioSearch.com. Page " + (pageable.getPageNumber() + 1));
 
-        items.put(ComponentType.DESCRIPTION.getName(), query + " online free radio search results. Browse "
-                + query + " mp3 music radio station results. Page " + (pageable.getPageNumber() + 1)
+        items.put(ComponentType.DESCRIPTION.getName(), queryText + " online free radio search results. Browse "
+                + queryText + " mp3 music radio station results. Page " + (pageable.getPageNumber() + 1)
         );
         items.put(ComponentType.KEYWORDS.getName(),
                 query.replaceAll("-", ", ") + ", shoutcast, web radio, "
@@ -49,8 +50,8 @@ public class SearchByRadioStationController {
         );
 
         items.put("seoQuery", SeoText.from(query));
-        items.put("query", SeoText.revert(query));
-        items.put("radioStations", searchByRadioStationService.retrieve(query, pageable));
+        items.put("query", queryText);
+        items.put("radioStations", searchByRadioStationService.retrieve(queryText, pageable));
         items.put("submenu-search-by-radio-station", true);
         return new ModelAndView("search/by-radio-station/index", items);
     }
