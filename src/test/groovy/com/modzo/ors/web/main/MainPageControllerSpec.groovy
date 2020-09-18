@@ -27,8 +27,8 @@ class MainPageControllerSpec extends IntegrationSpec {
             result.body.contains('<strong>Web Radio DNOR</strong> - webradiodnor.myl2mr.com')
         and:
             result.body.contains('<h2>Latest searches</h2>')
-            result.body.contains('<a href="/search/by-radio-station/hits"><button class="button is-small is-rounded ' +
-                    'is-success is-light">hits genre</button></a>')
+            result.body.contains('<a href="/search/by-radio-station/hits"><button ' +
+                    'class="button is-small is-rounded is-info is-light">hits station</button></a>')
     }
 
 }
