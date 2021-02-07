@@ -2,25 +2,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{DEPLOYMENT_NAME}}-deployment
+  name: {{APP_NAME}}-deployment
   namespace: {{NAMESPACE}}
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: {{DEPLOYMENT_NAME}}-app
+      app: {{APP_NAME}}-app
   template:
     metadata:
       labels:
-        app: {{DEPLOYMENT_NAME}}-app
+        app: {{APP_NAME}}-app
     spec:
       containers:
-      - name: {{DEPLOYMENT_NAME}}-app-container
+      - name: {{APP_NAME}}-app-container
         image: {{IMAGE}}
         ports:
         - containerPort: 8080
         envFrom:
         - configMapRef:
-            name: {{DEPLOYMENT_NAME}}-config
+            name: {{APP_NAME}}-config
       imagePullSecrets:
       - name: registry-secret
