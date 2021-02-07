@@ -19,5 +19,8 @@ spec:
         image: {{IMAGE}}
         ports:
         - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: online-radio-search-web-config
       imagePullSecrets:
       - name: registry-secret
