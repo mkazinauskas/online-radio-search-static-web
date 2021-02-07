@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{DEPLOYMENT_NAME}}
+  namespace: {{NAMESPACE}}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: {{DEPLOYMENT_NAME}}-app
+  template:
+    metadata:
+      labels:
+        app: {{DEPLOYMENT_NAME}}-app
+    spec:
+      containers:
+      - name: {{DEPLOYMENT_NAME}}-app-container
+        image: {{IMAGE}}
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: registry-secret
