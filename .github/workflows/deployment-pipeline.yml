@@ -147,7 +147,7 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_DEPLOYMENT_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
 
   deploy_to_stage:
     name: Deploy application to Stage environment
@@ -199,7 +199,7 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_DEPLOYMENT_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
 
 
   deploy_to_production:
@@ -250,4 +250,4 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_DEPLOYMENT_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
