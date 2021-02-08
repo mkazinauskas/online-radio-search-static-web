@@ -93,10 +93,6 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Save tag to outputs
-        id: step1
-        run: echo "::set-output name=test::hello"
-
   deploy_to_test:
     name: Deploy application to Test environment
     runs-on: ubuntu-20.04
@@ -147,7 +143,7 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}-deployment
 
   deploy_to_stage:
     name: Deploy application to Stage environment
@@ -199,7 +195,7 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}-deployment
 
 
   deploy_to_production:
@@ -250,4 +246,4 @@ jobs:
 
       - name: Check if deployment successful
         timeout-minutes: 2
-        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}
+        run: kubectl -n ${{ secrets.NAMESPACE }} rollout status deployment ${{ env.KUBERNETES_APP_NAME }}-deployment
